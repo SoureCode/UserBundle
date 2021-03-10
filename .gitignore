@@ -1,0 +1,14 @@
+# IDE
+.idea/
+
+# Dependencies
+vendor/
+
+# Coverage
+coverage/
+coverage.xml
+
+# Cache
+.DS_Store
+.php_cs.cache
+.phpunit.result.cache

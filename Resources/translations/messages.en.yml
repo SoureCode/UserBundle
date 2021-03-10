@@ -1,0 +1,50 @@
+sourecode:
+    user:
+        email:
+            change_email:
+                title: "Hello %name%!"
+                body: "We heard that you want to change your e-mail? If that is true, you can use the following link to verify this e-mail change:"
+                expires_at: "If you don't use this link it will expires at %expires_at%."
+            forgot_password:
+                title: "Forgot password?"
+                body: "We heard that you lost your password. Sorry about that! But don't worry! You can use the following link to reset your password:"
+                expires_at: "If you don't use this link it will expires at %expires_at%. To get a new password reset link, visit"
+            activated:
+                title: "Welcome %name%!"
+                body: "Your account is now activated. Use the following link to login into your account:"
+            signed_up:
+                title: "Hello %name%!"
+                body: "Use the following link to activate your account:"
+                expires_at: "If you don't use this link it will expires at %expires_at% and the account will be deleted. To register a new account visit:"
+        flash:
+            registered: "Successfully registered."
+            activated: "Successfully activated."
+            password_changed: "Successfully changed password."
+            change_email_requested: "Successfully requested e-mail change. Check the inbox of the new e-mail."
+            change_email_changed: "Successfully changed e-mail."
+            forgot_password_requested: "Successfully requested a password change request."
+            forgot_password_changed: "Successfully changed password."
+        form:
+            login:
+                email: "E-Mail"
+                password: "Password"
+                remember_me: "Remember me"
+                submit: "Login"
+            register:
+                email: "E-Mail"
+                username: "Username"
+                submit: "Register"
+            forgot_password:
+                email: "E-Mail"
+                request_submit: "Request"
+                change_submit: "Change"
+            change_password:
+                submit: "Save"
+            change_email:
+                invalid: "E-Mails doesn't match"
+                label: "E-Mail"
+                repeat: "Repeat E-Mail"
+                submit: "Save"
+            password:
+                label: "Password"
+                repeat: "Repeat Password"

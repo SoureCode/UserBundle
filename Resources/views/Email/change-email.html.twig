@@ -1,0 +1,19 @@
+<h1>{{ 'sourecode.user.email.change_email.title'|trans({'%name%': user.username}) }}</h1>
+<p>
+    {{ 'sourecode.user.email.change_email.body'|trans }}
+</p>
+<p>
+    <a href="{{ url('sourecode_user_change_email_verify', {'token': token.value}) }}">
+        {{ url('sourecode_user_change_email_verify', {'token': token.value}) }}
+    </a>.
+</p>
+<p>
+    {{ 'sourecode.user.email.change_email.expires_at'|trans({'%expires_at%': expires_at|format_datetime}) }}
+</p>
+<p>
+    <br>
+    {{ 'sourecode.common.email.signature'|trans }}
+    <br>
+    <br>
+    {{ 'sourecode.common.email.team'|trans }}
+</p>

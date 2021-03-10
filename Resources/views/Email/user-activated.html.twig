@@ -1,0 +1,17 @@
+<h1>{{ 'sourecode.user.email.activated.title'|trans({'%name%': user.username}) }}</h1>
+
+<p>
+    {{ 'sourecode.user.email.activated.body'|trans }}
+</p>
+<p>
+    <a href="{{ url('sourecode_user_login') }}">
+        {{ url('sourecode_user_login') }}
+    </a>
+</p>
+<p>
+    <br>
+    {{ 'sourecode.common.email.signature'|trans }}
+    <br>
+    <br>
+    {{ 'sourecode.common.email.team'|trans }}
+</p>

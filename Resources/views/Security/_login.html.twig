@@ -1,0 +1,15 @@
+{% import '@SoureCodeCommon/Macro/messages.html.twig' as messages %}
+
+{% if last_error %}
+    {{ messages.error(last_error.messageKey) }}
+{% endif %}
+
+{{ form_start(form) }}
+
+{{ form_row(form._email, {'value': last_username|default('')}) }}
+{{ form_row(form._password) }}
+{{ form_row(form._remember_me) }}
+<input type="hidden" name="_csrf_token" value="{{ csrf_token('user_authenticate') }}">
+<button type="submit" class="btn btn-primary">{{ 'sourecode.user.form.login.submit'|trans }}</button>
+
+{{ form_end(form, {'render_rest': false}) }}

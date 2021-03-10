@@ -1,0 +1,24 @@
+<h1>{{ 'sourecode.user.email.signed_up.title'|trans({'%name%': user.username}) }}</h1>
+<p>
+    {{ 'sourecode.user.email.signed_up.body'|trans }}
+</p>
+<p>
+    <a href="{{ url('sourecode_user_activate', {'token': token.value}) }}">
+        {{ url('sourecode_user_activate', {'token': token.value}) }}
+    </a>
+</p>
+<p>
+    {{ 'sourecode.user.email.signed_up.expires_at'|trans({'%expires_at%': expires_at|format_datetime }) }}
+</p>
+<p>
+    <a href="{{ url('sourecode_user_register') }}">
+        {{ url('sourecode_user_register') }}
+    </a>
+</p>
+<p>
+    <br>
+    {{ 'sourecode.common.email.signature'|trans }}
+    <br>
+    <br>
+    {{ 'sourecode.common.email.team'|trans }}
+</p>

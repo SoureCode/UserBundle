@@ -1,0 +1,15 @@
+
+sourecode:
+    user:
+        form:
+            password:
+                invalid: "Passwords do not match."
+        validator:
+            password:
+                compromised: "This password has been leaked in a data breach, it must not be used. Please use another password."
+                uppercase: "This password must contain a uppercase character."
+                lowercase: "This password must contain a lowercase character."
+                number: "This password must contain a number."
+                special: "This password must contain a special character."
+                min: "Your password should be at least {{ limit }} characters."
+                max: "Your password should be less than {{ limit }} characters."

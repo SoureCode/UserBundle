@@ -1,0 +1,80 @@
+{
+    "name": "sourecode/user-bundle",
+    "description": "User related interfaces and classes to use for authorization/authentication and similar intents.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Schilling",
+            "email": "jason@sourecode.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SoureCode\\Bundle\\User\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SoureCode\\Bundle\\User\\Tests\\": "Tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "sourecode/user-component": "^0.1",
+        "sourecode/common-bundle": "^0.1",
+        "sourecode/token-bundle": "^0.1",
+        "symfony/framework-bundle": "^5.2",
+        "symfony/security-core": "^5.2",
+        "symfony/translation": "^5.2",
+        "symfony/yaml": "^5.2",
+        "symfony/http-client": "^5.2",
+        "symfony/security-http": "^5.2",
+        "symfony/dependency-injection": "^5.2",
+        "symfony/config": "^5.2",
+        "symfony/http-foundation": "^5.2",
+        "symfony/form": "^5.2",
+        "symfony/http-kernel": "^5.2",
+        "symfony/event-dispatcher": "^5.2",
+        "symfony/routing": "^5.2",
+        "symfony/console": "^5.2",
+        "symfony/mime": "^5.2",
+        "symfony/mailer": "^5.2",
+        "symfony/contracts": "^2.3",
+        "symfony/validator": "^5.2",
+        "symfony/twig-bridge": "^5.2",
+        "symfony/string": "^5.2",
+        "doctrine/orm": "^2.8",
+        "doctrine/common": "^3.1",
+        "doctrine/doctrine-bundle": "^2.2",
+        "doctrine/persistence": "^2.1",
+        "twig/twig": "^3.3",
+        "twig/extra-bundle": "^3.3",
+        "twig/intl-extra": "^3.3"
+    },
+    "require-dev": {
+        "sourecode/bundle-test": "dev-master",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "vimeo/psalm": "^4.4",
+        "weirdan/doctrine-psalm-plugin": "^1.0",
+        "symfony/twig-bundle": "^5.2",
+        "symfony/security-bundle": "^5.2",
+        "symfony/messenger": "^5.2"
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm --show-info=false --no-cache --output-format=phpstorm",
+        "cs-fix": "vendor/bin/php-cs-fixer fix",
+        "cs-check": "vendor/bin/php-cs-fixer fix --diff",
+        "test": "vendor/bin/simple-phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
